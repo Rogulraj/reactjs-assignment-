@@ -111,10 +111,7 @@ export default class SavedVideo extends Component {
                 No saved videos found
               </Heading>
               <Paragraph color="#616e7c" fs="15px" fw="400">
-                You can saved your video while watching them
-              </Paragraph>
-              <Paragraph color="#616e7c" fs="15px" fw="400">
-                Save your videos by clicking a button
+                You can save your videos while watching them
               </Paragraph>
             </DivContainer>
           )

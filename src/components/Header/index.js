@@ -134,15 +134,15 @@ class Header extends Component {
               <DivContainer>
                 <UnOrderList>
                   <ListItem>
-                    <NavButton type="button" data-testid="theme">
+                    <NavButton
+                      type="button"
+                      onClick={onChangeTheme}
+                      data-testid="theme"
+                    >
                       {theme ? (
-                        <FiSun
-                          onClick={onChangeTheme}
-                          color="#ffffff"
-                          size={20}
-                        />
+                        <FiSun color="#ffffff" size={20} />
                       ) : (
-                        <FaMoon onClick={onChangeTheme} size={20} />
+                        <FaMoon size={20} />
                       )}
                     </NavButton>
                   </ListItem>

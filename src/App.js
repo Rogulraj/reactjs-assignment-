@@ -2,7 +2,7 @@ import './App.css'
 
 import {Component} from 'react'
 
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, Redirect} from 'react-router-dom'
 
 import AppContext from './context'
 
@@ -62,7 +62,8 @@ export default class App extends Component {
           <ProtectedRoute exact path="/gaming" component={Game} />
           <ProtectedRoute exact path="/videos/:id" component={VideoDetails} />
           <ProtectedRoute exact path="/saved-videos" component={SavedVideo} />
-          <ProtectedRoute component={NotFound} />
+          <Route path="/not-found" component={NotFound} />
+          <Redirect to="/not-found" />
         </Switch>
       </AppContext.Provider>
     )
